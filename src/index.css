@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+.google-sans-rpe {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+}
+.google-sans-rpei {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+  font-variation-settings:
+    "GRAD" 0;
+}
+
+@theme {
+  --color-trendy-pink-50: #fcf7fc;
+  --color-trendy-pink-100: #f8eff8;
+  --color-trendy-pink-200: #f0def0;
+  --color-trendy-pink-300: #e3c4e2;
+  --color-trendy-pink-400: #d1a1cf;
+  --color-trendy-pink-500: #ba7bb7;
+  --color-trendy-pink-600: #a566a1;
+  --color-trendy-pink-700: #814a7c;
+  --color-trendy-pink-800: #6a3e66;
+  --color-trendy-pink-900: #583754;
+  --color-trendy-pink-950: #371b34;
+}
