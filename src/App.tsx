@@ -16,9 +16,9 @@ function App() {
       <div>
         <div className="text-4xl font-extrabold mb-4 google-sans-rpei flex justify-center text-center text-trendy-pink-800 italic">#A comprehensive guide to React props</div>
         <BasicProp />
-        <RefProp />
-        <ComplexProp />
         <ChildrenProp />
+        <ComplexProp />
+        <RefProp />
         <ThemeProp />
       </div>
     </div>
