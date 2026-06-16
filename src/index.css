@@ -1,6 +1,17 @@
 @import "tailwindcss";
 
+/* Smooth scroll for anchor-link navigation */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
 
+/* Prevent horizontal overflow on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Google Sans font variants used throughout the app */
 .google-sans-rpe {
   font-family: "Google Sans", sans-serif;
   font-optical-sizing: auto;
@@ -18,6 +29,75 @@
     "GRAD" 0;
 }
 
+/* Code snippet blocks used to show learners the syntax patterns */
+.code-snippet {
+  font-family: "Fira Code", "Cascadia Code", "JetBrains Mono", monospace;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  white-space: pre;
+  tab-size: 2;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Responsive code snippets — smaller font on mobile */
+@media (max-width: 640px) {
+  .code-snippet {
+    font-size: 0.72rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.code-snippet-light {
+  background-color: #1e1b2e;
+  color: #e2dff5;
+  border: 1px solid #3b3660;
+}
+.code-snippet-dark {
+  background-color: #0d0d14;
+  color: #c8c3e3;
+  border: 1px solid #2a2745;
+}
+
+/* Keyword highlighting inside code snippets */
+.code-keyword { color: #c792ea; }
+.code-type { color: #82aaff; }
+.code-string { color: #c3e88d; }
+.code-comment { color: #697098; font-style: italic; }
+.code-punctuation { color: #89ddff; }
+.code-function { color: #82aaff; }
+
+/* Section card styling — the outer wrapper for each concept section */
+.section-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+/* Only hover-lift on devices that support hover (not touch) */
+@media (hover: hover) {
+  .section-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* Badge pill used for section numbers like "01", "02" */
+.concept-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+/* Custom theme colors */
 @theme {
   --color-trendy-pink-50: #fcf7fc;
   --color-trendy-pink-100: #f8eff8;
